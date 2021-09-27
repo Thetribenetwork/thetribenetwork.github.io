@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 15%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+    <div class="left" style="background-color:#bbb;">
+        <h2>The Tribe Documentation</h2>
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+            <li><a href="./index.html">How To connect to the tribe Network using Java</a></li>
+            <li><a href="./bedrock.html">How To connect to the tribe Network using Bedrock</a></li>
+        </ul>
+    </div>
+
+    <div class="right" style="background-color:#ddd;">
+        <h2>How to connect to The Tribe Network</h2>
+        <p>First launch minecraft and copy the following IP Address: thetribe.ppg.one</p></br>
+        <p>Next enter the Minecraft multiplayer menu</p>
+        <img width='500px' src="./assets/Screen Shot 2021-08-18 at 12.45.29 PM.png">
+        <p>In the multiplayer menu click "add server"</p>
+        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.45.37 PM.png">
+        <p>Next type any name into the server name slot and paste the address you copied into the address box by clicking it and pressing ctrl+v on windows or command+v on mac.</p>
+        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.46.03 PM.png">
+        <p>Press the "Done" button and the server will be on your servers list.</p>
+        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.46.13 PM.png"></br>
+        <h2>Joining a game</h2>
+        <p>Once you connect you will see spawn and find portals, walk into the portal of your choice to join your desired world</p>
+        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.54.56 PM.png"</img></br>
+        Congrats on joining and welcome to the server!
+    </div>
+</div>
+Documentation powered by: Gameplex sites
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
