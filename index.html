@@ -1,113 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Create a column layout with Flexbox */
-.row {
-  display: flex;
-}
-
-/* Left column (menu) */
-.left {
-  flex: 15%;
-  padding: 15px 0;
-}
-
-.left h2 {
-  padding-left: 8px;
-}
-
-/* Right column (page content) */
-.right {
-  flex: 65%;
-  padding: 15px;
-}
-
-/* Style the search box */
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid #ddd;
-}
-
-/* Style the navigation menu inside the left column */
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: black;
-  display: block
-}
-
-#myMenu li a:hover {
-  background-color: #eee;
-}
-</style>
-</head>
-<body>
-
-
-<div class="row">
-    <div class="left" style="background-color:#bbb;">
-        <h2>The Tribe Documentation</h2>
-        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-        <ul id="myMenu">
-            <li><a href="./index.html">How To connect to the tribe Network using Java</a></li>
-            <li><a href="./bedrock.html">How To connect to the tribe Network using Bedrock</a></li>
-        </ul>
-    </div>
-
-    <div class="right" style="background-color:#ddd;">
-        <h2>How to connect to The Tribe Network</h2>
-        <p>First launch minecraft and copy the following IP Address: thetribe.ppg.one</p></br>
-        <p>Next enter the Minecraft multiplayer menu</p>
-        <img width='500px' src="./assets/Screen Shot 2021-08-18 at 12.45.29 PM.png">
-        <p>In the multiplayer menu click "add server"</p>
-        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.45.37 PM.png">
-        <p>Next type any name into the server name slot and paste the address you copied into the address box by clicking it and pressing ctrl+v on windows or command+v on mac.</p>
-        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.46.03 PM.png">
-        <p>Press the "Done" button and the server will be on your servers list.</p>
-        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.46.13 PM.png"></br>
-        <h2>Joining a game</h2>
-        <p>Once you connect you will see spawn and find portals, walk into the portal of your choice to join your desired world</p>
-        <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.54.56 PM.png"</img></br>
-        Congrats on joining and welcome to the server!
-    </div>
-</div>
-Documentation powered by: Gameplex sites
-
-<script>
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
+  <meta charset="utf-8">
+  <title>Home – Tribe Network</title>
+  <meta name="generator" content="Google Web Designer 14.0.1.0920">
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
     }
-  }
-}
-</script>
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-div-1lne {
+      height: 1700px;
+    }
+    .gwd-div-w4j2 {
+      background-color: rgb(101, 101, 253);
+      border-radius: 10px;
+      height: 49px;
+      left: 29.05px;
+      position: absolute;
+      top: 1125px;
+      transform: matrix(1, 0, 0, 1, -12, 508);
+      transform-style: preserve-3d;
+      width: 235px;
+    }
+    .gwd-p-5t9o {
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+      font-size: 18px;
+      height: 49px;
+      left: 0px;
+      position: absolute;
+      text-align: center;
+      top: 0px;
+      width: 235px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700" rel="stylesheet" type="text/css">
+</head>
 
+<body class="htmlNoPages">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    /* Create a column layout with Flexbox */
+    
+    .row {
+      display: flex;
+    }
+    /* Left column (menu) */
+    
+    .left {
+      flex: 15%;
+      padding: 15px 0;
+    }
+    .left h2 {
+      padding-left: 8px;
+    }
+    /* Right column (page content) */
+    
+    .right {
+      flex: 65%;
+      padding: 15px;
+    }
+    /* Style the search box */
+    
+    #mySearch {
+      width: 100%;
+      font-size: 18px;
+      padding: 11px;
+      border: 1px solid #ddd;
+    }
+    /* Style the navigation menu inside the left column */
+    
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    #myMenu li a {
+      padding: 12px;
+      text-decoration: none;
+      color: black;
+      display: block
+    }
+    #myMenu li a:hover {
+      background-color: #eee;
+    }
+  </style>
+  <div class="row gwd-div-1lne">
+    <div class="left" style="background-color: #bbb;">
+      <h2>The Tribe Documentation</h2>
+      <input type="text" id="mySearch" placeholder="Search.." title="Type in a category" onkeyup="myFunction()">
+      <ul id="myMenu">
+        <li><a href="./index.html">How To connect to the tribe Network using Java</a></li>
+        <li><a href="./bedrock.html">How To connect to the tribe Network using Bedrock</a></li>
+      </ul>
+    </div>
+    <div class="right" style="background-color: #ddd;">
+      <h2>How to connect to The Tribe Network</h2>
+      <p>First launch minecraft and copy the following IP Address: thetribe.ppg.one</p><br>
+      
+      <p>Next enter the Minecraft multiplayer menu</p>
+      <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.45.29 PM.png">
+      <p>In the multiplayer menu click "add server"</p>
+      <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.45.37 PM.png">
+      <p>Next type any name into the server name slot and paste the address you copied into the address box by clicking it and pressing ctrl+v on windows or command+v on mac.</p>
+      <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.46.03 PM.png">
+      <p>Press the "Done" button and the server will be on your servers list.</p>
+      <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.46.13 PM.png"><br>
+      
+      <h2>Joining a game</h2>
+      <p>Once you connect you will see spawn and find portals, walk into the portal of your choice to join your desired world</p>
+      <img width="500px" src="./assets/Screen Shot 2021-08-18 at 12.54.56 PM.png" <="" img=""><br>
+       Congrats on joining and welcome to the server!
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+  <div class="gwd-div-w4j2">
+    <p class="gwd-p-5t9o">Created by: Gameplex web development team</p>
+  </div>
 </body>
+
 </html>
